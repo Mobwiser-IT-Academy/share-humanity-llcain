@@ -136,7 +136,7 @@ nav {
 }
 
 body {
-    background: rgb(145, 132, 145);
+    background-color: rgb(145, 132, 145);
 }
 
 .container-1 div, .container-2 div {
@@ -169,6 +169,7 @@ body {
     background-color: #5D4954;
     font-family: 'Poppins', sans-serif;
 }
+
 
 
 
