@@ -38,11 +38,7 @@ const humanitarianIssue = [
     {title: 'Hunger', summary: 'People in Nigeria are going hungry. They cannot get any food. Kids are suffering from malnourishment.'},
     {title: 'Unable to get medical help', summary: 'Since the people in Nigeria have drinking unclean water, they get waterborne diseases. They cannot get the medical help they need to get better. Leaving alot of the kids near dealth or dying.'}
 
-    
-    
-
-
-        
+            
 ];
 
 let list = "<div>";
@@ -55,6 +51,37 @@ list += "</div>"
 
 content.innerHTML = list;
 
+// Get input element
+let filterInput = document.getElementById('filterInput');
 
+// Add event listener
+filterInput.addEventListener('keyup', filterNames);
+
+function filterNames () {
+    // Get value of input
+    let filterValue = document.getElementById('filterInput').value.toUpperCase();
+    
+    // Get names ul
+    let ul = document.getElementById('names');
+
+    // Get list from ul
+    let li = ul.querySelectorAll('li.humanitarian-issue');
+
+    // Loop through humanitarian-issue list
+    for(let i = 0; i < li.length; i++) {
+        let h2 = li[i].getElementsByTagName('h2')[0];
+        let p = li[i].getElementsByTagName('p')[0];
+        
+        // If matched
+        if(h2.innerHTML.toUpperCase().indexOf(filterValue) && p.innerHTML.toUpperCase().indexOf(filterValue) >
+        -1) {
+            li[i].style.display = '';
+        } else {
+            // Not matched
+            li[i].style.display = 'none';
+        }
+    }    
+
+}
 
 
