@@ -8,13 +8,14 @@ const humanitarianIssue = [
             
 ];
 
-let list = "<div>";
-
-for(i = 0; i < humanitarianIssue.length; i++) {
-    list += "<h1>" + humanitarianIssue[i].title + "</h1>";
-    list += "<p>" + humanitarianIssue[i].summary + "</p>"
+let list = '<ul id="names" class="collection">'
+for (i = 0; i < humanitarianIssue.length; i++) {
+    list += `<li class="humanitarian-issue">
+              <a href="#">${humanitarianIssue[i].title}</a>
+              <p>${humanitarianIssue[i].summary}</p>
+              </li>`;
 };
-list += "</div>"
+list += "</ul>"
 
 content.innerHTML = list;
 
@@ -27,6 +28,8 @@ filterInput.addEventListener('keyup', filterNames);
 function filterNames () {
     // Get value of input
     let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+    const content = document.getElementById('content').title.summary.toUpperCase();
     
     // Get names ul
     let ul = document.getElementById('names');
