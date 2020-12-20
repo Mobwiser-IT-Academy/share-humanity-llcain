@@ -142,6 +142,8 @@ body {
 .container-1 div, .container-2 div {
     border: 3px rgb(248, 246, 246) solid;
     padding: 10px;
+    width: auto;
+    height: auto;
 }
 
 .box-1 {
@@ -169,7 +171,3 @@ body {
     background-color: #5D4954;
     font-family: 'Poppins', sans-serif;
 }
-
-
-
-
