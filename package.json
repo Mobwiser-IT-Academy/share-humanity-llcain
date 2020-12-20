@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Mobwiser-IT-Academy/share-humanity-llcain/issues"
   },
-  "homepage": "https://github.com/Mobwiser-IT-Academy/share-humanity-llcain#readme"
+  "homepage": "https://github.com/Mobwiser-IT-Academy/share-humanity-llcain#readme",
+  "devDependencies": {
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  }
 }
