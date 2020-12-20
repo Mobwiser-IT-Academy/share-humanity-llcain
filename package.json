@@ -2,7 +2,7 @@
   "name": "share-humanity",
   "version": "1.0.0",
   "description": "My Humanitarian Website.",
-  "main": "about.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Mobwiser-IT-Academy/share-humanity-llcain.git"
   },
   "keywords": [],
-  "author": "Bob",
+  "author": "LaQuisha Cain",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Mobwiser-IT-Academy/share-humanity-llcain/issues"
