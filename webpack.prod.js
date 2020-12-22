@@ -1,4 +1,4 @@
-const common = require("./webpack.common");
+const common = require("./webpack.common.js");
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require("path");
